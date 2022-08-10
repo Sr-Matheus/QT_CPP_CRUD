@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>store</class>
+ <widget class="QMainWindow" name="store">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Wefix Store™</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imgs.qrc">
+    <normaloff>:/Imgs/UI/PNG/icon.png</normaloff>:/Imgs/UI/PNG/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#34495e;
+color:#fff;
+font: 14pt &quot;Roboto&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_pdv">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>700</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_pdv
+{
+	background:#3498db;
+	border-radius:1px;
+}
+
+#btn_pdv:hover
+{
+	background:#2980b9;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/Imgs/UI/PNG/Store/pdv_btn.png</normaloff>:/Imgs/UI/PNG/Store/pdv_btn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>510</width>
+      <height>140</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>F1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cadastros">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>300</y>
+      <width>330</width>
+      <height>245</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_cadastros
+{
+	background-color:#2ecc71;
+	color:#fff;
+	border-radius: 1px;
+	
+	font: 18pt &quot;Roboto&quot;;
+}
+#btn_cadastros:hover
+{
+	background-color:#27ae60;
+}
+</string>
+    </property>
+    <property name="text">
+     <string> CADASTROS</string>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/Imgs/UI/PNG/Store/cadastros_btn.png</normaloff>:/Imgs/UI/PNG/Store/cadastros_btn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>F2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_suporte">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>300</y>
+      <width>330</width>
+      <height>245</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_suporte
+{
+	background-color:#e74c3c;
+	color:#fff;
+	border-radius: 1px;
+	font: 18pt &quot;Roboto&quot;;
+}
+#btn_suporte:hover
+{
+	background-color:#c0392b;
+}
+</string>
+    </property>
+    <property name="text">
+     <string> SUPORTE</string>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/Imgs/UI/PNG/Store/suporte_btn.png</normaloff>:/Imgs/UI/PNG/Store/suporte_btn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>F3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_info">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>555</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_info
+{
+	background-color:transparent;
+	color:#fff;
+	border-radius: 1px;
+}
+#btn_info:hover
+{
+	background-color:#3498db;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/Imgs/UI/Icones/Store/info.png</normaloff>:/Imgs/UI/Icones/Store/info.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>250</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#FFF;
+color:#2980b9;</string>
+    </property>
+    <property name="text">
+     <string>F1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>510</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#FFF;
+color: #27ae60;</string>
+    </property>
+    <property name="text">
+     <string>F2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>510</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#FFF;
+color:#c0392b;</string>
+    </property>
+    <property name="text">
+     <string>F3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>btn_pdv</zorder>
+   <zorder>btn_cadastros</zorder>
+   <zorder>btn_suporte</zorder>
+   <zorder>btn_info</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>msg_suporte</class>
+ <widget class="QDialog" name="msg_suporte">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>595</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>595</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>595</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Suporte</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imgs.qrc">
+    <normaloff>:/Imgs/UI/PNG/Store/suporte_btn.png</normaloff>:/Imgs/UI/PNG/Store/suporte_btn.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#msg_suporte{
+background-image: url(:/Imgs/UI/PNG/Mensagens/suporte_cx.png);
+color: rgb(255, 255, 255);
+font: 16pt &quot;Roboto&quot;;
+}
+
+</string>
+  </property>
+  <widget class="QPushButton" name="btn_fechar">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>160</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_fechar
+{
+	background-color: rgb(231, 76, 60);
+	color:#fff;
+	border-radius: 1px;
+}
+#btn_fechar:hover
+{
+	background-color:#c0392b;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Fechar</string>
+   </property>
+   <property name="icon">
+    <iconset resource="imgs.qrc">
+     <normaloff>:/Imgs/UI/Icones/Store/fechar.png</normaloff>:/Imgs/UI/Icones/Store/fechar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>400</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 16pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Para falar com suporte, disque:
+(88) 996425633 - JC Suporte 
+ (88) 99735-9666 - Contato WEFIX</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

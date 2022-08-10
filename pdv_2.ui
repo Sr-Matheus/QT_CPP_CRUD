@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pdv_2</class>
+ <widget class="QDialog" name="pdv_2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Wefix Store™</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imgs.qrc">
+    <normaloff>:/Imgs/UI/PNG/icon.png</normaloff>:/Imgs/UI/PNG/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#pdv_2{
+background-color: rgb(52, 73, 94);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Roboto&quot;;
+}
+
+.QMessageBox
+{
+	background-color: rgb(52, 73, 94);
+	text-color: rgb(255, 255, 255);
+	font: 12pt &quot;Roboto&quot;;
+}
+
+.QLabel
+{	
+	color: rgb(255, 255, 255);
+}
+
+.QPushButton
+{
+	
+	background-color: rgb(52, 152, 219);
+	border-radius:1px;
+	color: rgb(255, 255, 255);
+	font: 12pt &quot;Roboto&quot;;
+	width: 50px;
+	height: 30px;
+}
+
+.QPushButton:hover
+{
+	background-color: rgb(41, 128, 185);
+}
+
+
+.QLineEdit{
+	border-radius: 1px;
+	background-color:rgb(127, 140, 141);
+	color: rgb(44, 62, 80);
+	font: 14pt &quot;Roboto&quot;;
+}
+
+.QLineEdit:focus
+{
+	background-color:#bdc3c7;
+	text-color:2c3e50;
+}
+
+
+.QLineEdit:hover
+{
+	background-color:#bdc3c7;
+	text-color:2c3e50;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>25</y>
+     <width>700</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(52, 152, 219);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="btn_voltar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_voltar
+{
+	background: transparent;
+	border-radius:1px;
+}
+
+#btn_voltar:hover
+{
+	background-color: rgb(41, 128, 185);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/Imgs/UI/PNG/Store/voltar.png</normaloff>:/Imgs/UI/PNG/Store/voltar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>15</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Roboto&quot;;</string>
+    </property>
+    <property name="text">
+     <string>PONTO DE VENDAS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>15</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/ponto_de_vendas.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="le_pesquisar">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>85</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="maxLength">
+    <number>20</number>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>INSERIR CÓDIGO DO PRODUTO</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_buscar_produtos">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>145</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_buscar_produtos
+{
+	
+	background-color: rgb(127, 140, 141);
+	
+	font: 18pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_buscar_produtos:hover
+{
+	
+	background-color: rgb(149, 165, 166);
+}</string>
+   </property>
+   <property name="text">
+    <string>PROCURAR PRODUTOS</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>155</y>
+     <width>25</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/pesquisar_produto.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tw_produtos">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>205</y>
+     <width>700</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QHeaderView::section {   
+	color: rgb(255, 255, 255);
+	background-color: rgb(41, 128, 185);
+	border:solid;
+	border-bottom-color: rgb(44, 62, 80);
+}
+
+QTableWidget { 
+	background-color: rgb(41, 128, 185);
+  	border-style: none;
+}
+
+QTableWidget QTableCornerButton::section {
+	background-color: rgb(41, 128, 185);
+}
+
+#tw_produtos{
+	background-color: rgb(127, 140, 141);
+	alternate-background-color: rgb(189, 195, 199);
+	color: rgb(52, 73, 94);
+	border:none;
+	border-style:none;
+	font: 12pt &quot;Roboto&quot;;
+}</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_finalizar_venda">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>525</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_finalizar_venda
+{
+	background-color: rgb(39, 174, 96);	
+	font: 16pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_finalizar_venda:hover
+{	
+	background-color: rgb(46, 204, 113);
+}</string>
+   </property>
+   <property name="text">
+    <string>FINALIZAR VENDA</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>540</y>
+     <width>25</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image:url(:/Imgs/UI/Icones/Vendas/confirmar_vendas.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>515</y>
+     <width>280</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+border-top: 1px solid white;
+border-bottom: 1px solid white;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>530</y>
+     <width>110</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>24</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Roboto&quot;;
+color: rgb(46, 204, 113);</string>
+   </property>
+   <property name="text">
+    <string>TOTAL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_total">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>530</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>24</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>R$ 0.00</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_produtos">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>490</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>490</y>
+     <width>110</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>PRODUTOS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_remover_item">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>145</y>
+     <width>167</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_remover_item
+{
+	background-color: rgb(211, 84, 0);
+	font: 14pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_remover_item:hover
+{
+	background-color: rgb(230, 126, 34);
+}</string>
+   </property>
+   <property name="text">
+    <string> REMOVER
+ITEM</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cancelar_venda">
+   <property name="geometry">
+    <rect>
+     <x>583</x>
+     <y>145</y>
+     <width>167</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_cancelar_venda
+{	
+	background-color: rgb(192, 57, 43);
+	font: 14pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_cancelar_venda:hover
+{
+	background-color: rgb(231, 76, 60);
+}</string>
+   </property>
+   <property name="text">
+    <string> CANCELAR
+VENDA</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>160</y>
+     <width>26</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/remover_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>160</y>
+     <width>26</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/cancelar_venda.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>170</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(127, 140, 141);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>F9</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>548</x>
+     <y>171</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(211, 84, 0);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>F3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>171</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(192, 57, 43);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>F4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>714</x>
+     <y>550</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(39, 174, 96);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Enter</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_qtd">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>85</y>
+     <width>167</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#le_pesquisar
+{
+	border:none;
+	background-color: rgb(127, 140, 141);
+	color: rgb(44, 62, 80);
+}
+#le_pesquisar:focus
+{
+	
+	background-color: rgb(149, 165, 166);
+}</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>5</number>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>QUANTIDADE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_adicionar_item">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>85</y>
+     <width>167</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_cancelar_venda
+{	
+	background-color: rgb(192, 57, 43);
+	font: 14pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_cancelar_venda:hover
+{
+	background-color: rgb(231, 76, 60);
+}</string>
+   </property>
+   <property name="text">
+    <string>ADICIONAR
+ITEM</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>723</x>
+     <y>111</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(52, 152, 219);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>F2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>100</y>
+     <width>26</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/adicionar_item.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>le_pesquisar</tabstop>
+  <tabstop>le_qtd</tabstop>
+  <tabstop>btn_adicionar_item</tabstop>
+  <tabstop>btn_remover_item</tabstop>
+  <tabstop>btn_cancelar_venda</tabstop>
+  <tabstop>tw_produtos</tabstop>
+  <tabstop>btn_finalizar_venda</tabstop>
+  <tabstop>btn_buscar_produtos</tabstop>
+  <tabstop>btn_voltar</tabstop>
+ </tabstops>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

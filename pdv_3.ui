@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pdv_3</class>
+ <widget class="QDialog" name="pdv_3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Roboto</family>
+    <pointsize>18</pointsize>
+    <weight>50</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Wefix Store™</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imgs.qrc">
+    <normaloff>:/Imgs/UI/PNG/icon.png</normaloff>:/Imgs/UI/PNG/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#pdv_3{
+background-color: rgb(52, 73, 94);
+color: rgb(255, 255, 255);
+font: 18pt &quot;Roboto&quot;;
+}
+
+.QMessageBox
+{
+	background-color: rgb(52, 73, 94);
+	text-color: rgb(255, 255, 255);
+	font: 12pt &quot;Roboto&quot;;
+}
+
+.QLabel
+{	
+	color: rgb(255, 255, 255);
+}
+
+.QPushButton
+{
+	
+	background-color: rgb(52, 152, 219);
+	border-radius:1px;
+	color: rgb(255, 255, 255);
+	font: 12pt &quot;Roboto&quot;;
+	width: 50px;
+	height: 30px;
+}
+
+.QPushButton:hover
+{
+	background-color: rgb(41, 128, 185);
+}
+
+
+.QLineEdit{
+	border-radius: 1px;
+	background-color:rgb(127, 140, 141);
+	color: rgb(44, 62, 80);
+	font: 14pt &quot;Roboto&quot;;
+}
+
+.QLineEdit:focus
+{
+	background-color:#bdc3c7;
+	text-color:2c3e50;
+}
+
+.QLineEdit:hover
+{
+	background-color:#bdc3c7;
+	text-color:2c3e50;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>25</y>
+     <width>700</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(52, 152, 219);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>15</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Roboto&quot;;</string>
+    </property>
+    <property name="text">
+     <string>PONTO DE VENDAS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>15</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/ponto_de_vendas.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>100</y>
+     <width>430</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>SELECIONE A FORMA DE PAGAMENTO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_dinheiro">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>145</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>DINHEIRO</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_cartao_credito">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>205</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>CARTÃO DE CRÉDITO</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_cheque">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>145</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>CHEQUE</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_cartao_debito">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>205</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>CARTÃO DE DÉBITO</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>275</y>
+     <width>701</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+border-top: 1px solid white;
+border-bottom: 1px solid white;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_subtotal">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>300</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>SUBTOTAL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_desconto">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>345</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>DESCONTO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_subtotal_valor">
+   <property name="geometry">
+    <rect>
+     <x>499</x>
+     <y>300</y>
+     <width>251</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>R$ 0.00</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_pago">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>395</y>
+     <width>170</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>20</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Roboto&quot;;
+color: rgb(46, 204, 113);</string>
+   </property>
+   <property name="text">
+    <string>VALOR PAGO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_pago_valor">
+   <property name="geometry">
+    <rect>
+     <x>389</x>
+     <y>395</y>
+     <width>361</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>R$ 0.00</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_troco">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>435</y>
+     <width>170</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>20</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Roboto&quot;;
+color: rgb(46, 204, 113);</string>
+   </property>
+   <property name="text">
+    <string>TROCO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_troco_valor">
+   <property name="geometry">
+    <rect>
+     <x>389</x>
+     <y>435</y>
+     <width>361</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>R$ 0.00</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_finalizar_venda">
+   <property name="geometry">
+    <rect>
+     <x>45</x>
+     <y>535</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_finalizar_venda
+{
+	background-color: rgb(39, 174, 96);	
+	font: 16pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_finalizar_venda:hover
+{	
+	background-color: rgb(46, 204, 113);
+}</string>
+   </property>
+   <property name="text">
+    <string>FINALIZAR VENDA</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>560</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(39, 174, 96);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>F2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>550</y>
+     <width>25</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image:url(:/Imgs/UI/Icones/Vendas/confirmar_vendas.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cancelar_venda">
+   <property name="geometry">
+    <rect>
+     <x>411</x>
+     <y>535</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_cancelar_venda
+{
+	background-color: rgb(192, 57, 43);
+	font: 16pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_cancelar_venda:hover
+{	
+	background-color: rgb(231, 76, 60);
+}</string>
+   </property>
+   <property name="text">
+    <string>CANCELAR VENDA</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>416</x>
+     <y>550</y>
+     <width>26</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/cancelar_venda.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>560</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(192, 57, 43);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Esc</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>155</y>
+     <width>54</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/dinheiro.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>415</x>
+     <y>155</y>
+     <width>54</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/cheque.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>215</y>
+     <width>54</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/cartao.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>415</x>
+     <y>215</y>
+     <width>54</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/cartao.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_desconto">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>345</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(231, 76, 60);
+background-color: ;
+background-color: rgb(52, 73, 94);
+border:none;
+font: 16pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>6</number>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>- 0.0 %</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_desconto_2">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>345</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(231, 76, 60);
+background-color: ;
+background-color: rgb(52, 73, 94);
+border:none;
+font: 16pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>- 0.00 R$</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_troco_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>490</y>
+     <width>170</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>20</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Roboto&quot;;
+color: rgb(46, 204, 113);</string>
+   </property>
+   <property name="text">
+    <string>TOTAL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_total">
+   <property name="geometry">
+    <rect>
+     <x>389</x>
+     <y>490</y>
+     <width>361</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Roboto&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>R$ 0.00</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>le_dinheiro</tabstop>
+  <tabstop>le_cheque</tabstop>
+  <tabstop>le_cartao_credito</tabstop>
+  <tabstop>le_cartao_debito</tabstop>
+  <tabstop>le_desconto</tabstop>
+  <tabstop>le_desconto_2</tabstop>
+  <tabstop>btn_finalizar_venda</tabstop>
+  <tabstop>btn_cancelar_venda</tabstop>
+ </tabstops>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

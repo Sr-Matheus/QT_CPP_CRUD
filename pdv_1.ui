@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pdv_1</class>
+ <widget class="QDialog" name="pdv_1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Wefix Store™</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="Padrão" resource="imgs.qrc">
+    <normaloff>:/Imgs/UI/PNG/icon.png</normaloff>:/Imgs/UI/PNG/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(52, 73, 94);
+color:#fff;
+font: 12pt &quot;Roboto&quot;;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>25</y>
+     <width>345</width>
+     <height>550</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="imgs.qrc">:/Imgs/UI/PNG/Store/pdv.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_voltar">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>30</y>
+     <width>120</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_voltar
+{
+	background: transparent;
+	border-radius:1px;
+}
+
+#btn_voltar:hover
+{
+	background-color: rgb(41, 128, 185);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imgs.qrc">
+     <normaloff>:/Imgs/UI/PNG/Store/voltar.png</normaloff>:/Imgs/UI/PNG/Store/voltar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_pdv">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>25</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_pdv
+{
+	
+	background-color: rgb(127, 140, 141);
+	
+	font: 18pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_pdv:hover
+{
+	
+	background-color: rgb(149, 165, 166);
+}</string>
+   </property>
+   <property name="text">
+    <string>PONTO DE VENDAS</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_edita_venda">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>85</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_edita_venda
+{
+	
+	background-color: rgb(127, 140, 141);
+	
+	font: 18pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_edita_venda:hover
+{
+	
+	background-color: rgb(149, 165, 166);
+}</string>
+   </property>
+   <property name="text">
+    <string>VISUALIZAR VENDAS</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>40</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="imgs.qrc">:/Imgs/UI/Icones/ponto_de_vendas.png</pixmap>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>100</y>
+     <width>25</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/pesquisar_produto.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>50</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(127, 140, 141);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>F1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>110</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(127, 140, 141);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>F2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>160</y>
+     <width>25</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/relatorios.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_relatorio">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>145</y>
+     <width>345</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_relatorio
+{
+	
+	background-color: rgb(127, 140, 141);
+	
+	font: 18pt &quot;Roboto&quot;;
+	border-radius:1px;
+}
+
+#btn_relatorio:hover
+{
+	
+	background-color: rgb(149, 165, 166);
+}</string>
+   </property>
+   <property name="text">
+    <string>RELATÓRIOS</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>170</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#FFF;
+color: rgb(127, 140, 141);
+font: 10pt &quot;Roboto&quot;;</string>
+   </property>
+   <property name="text">
+    <string>F3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>btn_relatorio</zorder>
+  <zorder>label</zorder>
+  <zorder>btn_voltar</zorder>
+  <zorder>btn_pdv</zorder>
+  <zorder>btn_edita_venda</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_7</zorder>
+ </widget>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

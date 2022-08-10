@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cadastro_usuarios</class>
+ <widget class="QDialog" name="cadastro_usuarios">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Wefix Store™</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imgs.qrc">
+    <normaloff>:/Imgs/UI/PNG/icon.png</normaloff>:/Imgs/UI/PNG/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#cadastro_usuarios
+{
+	background-color: rgb(52, 73, 94);
+}
+
+.QLabel
+{
+	color:rgb(255, 255, 255);
+}
+
+
+
+.QMessageBox
+{
+	background-color: rgb(52, 73, 94);
+	text-color: rgb(255, 255, 255);
+	font: 12pt &quot;Roboto&quot;;
+}
+
+
+.QPushButton
+{
+	
+	background-color: rgb(52, 152, 219);
+	border-radius:1px;
+	color: rgb(255, 255, 255);
+	font: 14pt &quot;Roboto&quot;;
+	width: 50px;
+	height: 30px;
+}
+
+.QPushButton:hover
+{
+	background-color: rgb(41, 128, 185);
+}
+
+
+.QLineEdit{
+	border-radius: 1px;
+	background-color:rgb(127, 140, 141);
+	color: rgb(44, 62, 80);
+	font: 14pt &quot;Roboto&quot;;
+}
+
+.QLineEdit:focus{
+background-color:#bdc3c7;
+text-color:#2c3e50;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>25</y>
+     <width>700</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(46, 204, 113);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>15</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Roboto&quot;;</string>
+    </property>
+    <property name="text">
+     <string>USUÁRIOS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>15</y>
+      <width>25</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/clientes.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_voltar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>120</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_voltar
+{
+	background: transparent;
+	border-radius:1px;
+}
+
+#btn_voltar:hover
+{
+	
+	background-color: rgb(39, 174, 96);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/Imgs/UI/PNG/Store/voltar.png</normaloff>:/Imgs/UI/PNG/Store/voltar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btn_excluir">
+   <property name="geometry">
+    <rect>
+     <x>409</x>
+     <y>90</y>
+     <width>341</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_excluir
+{
+	border-radius:1px;
+	background-color: rgb(231, 76, 60);	
+}
+
+#btn_excluir:hover
+{
+	background-color: rgb(192, 57, 43);
+}</string>
+   </property>
+   <property name="text">
+    <string>EXCLUIR</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cadastrar">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>341</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_cadastrar
+{
+	background:#3498db;
+	border-radius:1px;
+}
+
+#btn_cadastrar:hover
+{
+	background:#2980b9;
+}</string>
+   </property>
+   <property name="text">
+    <string>CADASTRAR</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tw_usuarios">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>160</y>
+     <width>700</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QHeaderView::section {   
+	color: rgb(255, 255, 255);
+	background-color: rgb(41, 128, 185);
+	border:solid;
+	border-bottom-color: rgb(44, 62, 80);
+}
+
+QTableWidget { 
+	background-color: rgb(41, 128, 185);
+  	border-style: none;
+}
+
+QTableWidget QTableCornerButton::section {
+	background-color: rgb(41, 128, 185);
+}
+
+#tw_usuarios{
+	background-color: rgb(127, 140, 141);
+	alternate-background-color: rgb(189, 195, 199);
+	color: rgb(52, 73, 94);
+	border:none;
+	border-style:none;
+	font: 12pt &quot;Roboto&quot;;
+}</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

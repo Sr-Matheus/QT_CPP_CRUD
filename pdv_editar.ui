@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pdv_editar</class>
+ <widget class="QDialog" name="pdv_editar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Wefix Store™</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imgs.qrc">
+    <normaloff>:/Imgs/UI/PNG/icon.png</normaloff>:/Imgs/UI/PNG/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(52, 73, 94);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Roboto&quot;;
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>25</y>
+     <width>700</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(52, 152, 219);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="btn_voltar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_voltar
+{
+	background: transparent;
+	border-radius:1px;
+}
+
+#btn_voltar:hover
+{
+	background-color: rgb(41, 128, 185);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/Imgs/UI/PNG/Store/voltar.png</normaloff>:/Imgs/UI/PNG/Store/voltar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>15</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Roboto&quot;;</string>
+    </property>
+    <property name="text">
+     <string>VISUALIZAR VENDAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>15</y>
+      <width>25</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+background-image: url(:/Imgs/UI/Icones/Vendas/pesquisar_produto.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btn_filtrar">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>85</y>
+     <width>167</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_filtrar
+{
+	border-radius:1px;
+	background-color: rgb(241, 196, 15);
+}
+
+#btn_filtrar:hover
+{
+		background-color: rgb(230, 126, 34);	
+}</string>
+   </property>
+   <property name="text">
+    <string>FILTRAR</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_exibir_vendas">
+   <property name="geometry">
+    <rect>
+     <x>549</x>
+     <y>85</y>
+     <width>201</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_exibir_vendas
+{
+	border-radius:1px;
+	background-color: rgb(231, 76, 60);	
+}
+
+#btn_exibir_vendas:hover
+{
+	background-color: rgb(192, 57, 43);
+}</string>
+   </property>
+   <property name="text">
+    <string>EXIBIR TODAS AS VENDAS</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tw_1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>700</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QHeaderView::section {   
+	color: rgb(255, 255, 255);
+	background-color: rgb(41, 128, 185);
+	border:solid;
+	border-bottom-color: rgb(44, 62, 80);
+}
+
+QTableWidget { 
+	background-color: rgb(41, 128, 185);
+  	border-style: none;
+}
+
+QTableWidget QTableCornerButton::section {
+	background-color: rgb(41, 128, 185);
+}
+
+#tw_1{
+	background-color: rgb(127, 140, 141);
+	alternate-background-color: rgb(189, 195, 199);
+	color: rgb(52, 73, 94);
+	border:none;
+	border-style:none;
+	font: 12pt &quot;Roboto&quot;;
+}</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tw_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>345</y>
+     <width>700</width>
+     <height>180</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QHeaderView::section {   
+	color: rgb(255, 255, 255);
+	background-color: rgb(41, 128, 185);
+	border:solid;
+	border-bottom-color: rgb(44, 62, 80);
+}
+
+QTableWidget { 
+	background-color: rgb(41, 128, 185);
+  	border-style: none;
+}
+
+QTableWidget QTableCornerButton::section {
+	background-color: rgb(41, 128, 185);
+}
+
+#tw_2{
+	background-color: rgb(127, 140, 141);
+	alternate-background-color: rgb(189, 195, 199);
+	color: rgb(52, 73, 94);
+	border:none;
+	border-style:none;
+	font: 12pt &quot;Roboto&quot;;
+}</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="de_data_1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>85</y>
+     <width>150</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#de_data_1
+{
+	border:none;
+	background-color: rgb(127, 140, 141);
+	color: rgb(44, 62, 80);
+}
+
+#de_data_1:hover
+{
+	background-color: rgb(149, 165, 166);
+}</string>
+   </property>
+   <property name="date">
+    <date>
+     <year>2020</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="de_data_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>85</y>
+     <width>150</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#de_data_2
+{
+	border:none;
+	background-color: rgb(127, 140, 141);
+	color: rgb(44, 62, 80);
+}
+
+#de_data_2:hover
+{
+	background-color: rgb(149, 165, 166);
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::UpDownArrows</enum>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2020</year>
+     <month>12</month>
+     <day>31</day>
+    </datetime>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2010</year>
+     <month>9</month>
+     <day>14</day>
+    </datetime>
+   </property>
+   <property name="date">
+    <date>
+     <year>2020</year>
+     <month>12</month>
+     <day>31</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_gerar_pdf">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>540</y>
+     <width>700</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btn_gerar_pdf
+{
+	background:#3498db;
+	border-radius:1px;
+	color: rgb(255, 255, 255);
+	font: 12pt &quot;Roboto&quot;;
+
+}
+
+#btn_gerar_pdf:hover
+{
+	background:#2980b9;
+	color: rgb(255, 255, 255);
+	font: 12pt &quot;Roboto&quot;;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>GERAR RELÁTORIO EM PDF</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>565</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(255, 255, 255);
+border-radius:1px;
+color: #3498db;
+font: 10pt &quot;Roboto&quot;;
+
+</string>
+   </property>
+   <property name="text">
+    <string>Enter</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>
