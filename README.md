@@ -17,3 +17,8 @@ Este é um aplicativo CRUD (Create, Read, Update, Delete) construído usando Qt 
 - Criar, ler, atualizar e excluir vendas
 - Visualizar lista de produtos e vendas
 - Funcionalidade de pesquisa para produtos.
+
+## Screenshots 🖼️
+
+![Login Screen](Printscreens/Login_screen.png)
+
