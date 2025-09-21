@@ -20,5 +20,20 @@ Este é um aplicativo CRUD (Create, Read, Update, Delete) construído usando Qt 
 
 ## Screenshots 🖼️
 
+#### Login
 ![Login Screen](Printscreens/Login_screen.png)
+
+#### Main Screen / Tela Principal
+![Main Screen](Printscreens/Main_screen.png)
+
+
+#### Products Screen / Tela de Produtos
+![Products Screen](Printscreens/Products.png)
+
+
+#### Sales Screen / Tela de Vendas
+![Sales Screen](Printscreens/Sales.png)
+
+
+
 
